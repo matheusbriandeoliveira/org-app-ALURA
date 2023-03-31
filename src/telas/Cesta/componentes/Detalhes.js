@@ -10,15 +10,11 @@ export default function Detalhes({ nome, logoFazenda, nomeFazenda, descricao, pr
     <View style={estilos.fazenda}>
       <Image source={logoFazenda} style={estilos.imagemFazenda} />
       <Texto style={estilos.nomeFazenda}>{ nomeFazenda }</Texto>
-      
     </View>
-    
     <Texto style={estilos.descricao}>{ descricao }</Texto>
-      <Texto style={estilos.preco}>{preco}</Texto>
+    <Texto style={estilos.preco}>{ preco }</Texto>
 
     <Botao texto={botao} style={estilos.botao} onPress={() => {}} />
-
-
   </>
 }
 
@@ -53,6 +49,8 @@ const estilos = StyleSheet.create({
     fontSize: 26,
     lineHeight: 42,
     marginTop: 8,
-    },
-  
+  },
+  botao: {
+    marginTop: 16,
+  }
 })
